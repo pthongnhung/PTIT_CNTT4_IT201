@@ -9,6 +9,15 @@ int sumMainDigonal(int **arr,int rows)
     }
     return sum;
 }
+int sumAntiDiagonal(int **arr,int rows)
+{
+    int sum=0;
+    for(int i=0;i<rows;i++)
+    {
+        sum+=arr[i][rows-1-i];
+    }
+    return sum;
+}
 int main()
 {
     int rows;
@@ -47,7 +56,8 @@ int main()
             scanf("%d",&maxtrix[i][j]);
         }
     }
-    printf("Tong duong cheo chinh: %d",sumMainDigonal(maxtrix,rows));
+    printf("Tong duong cheo chinh: %d\n",sumMainDigonal(maxtrix,rows));
+    printf("Tong duong cheo phu: %d",sumAntiDiagonal(maxtrix,rows));
     for (int i=0;i<rows;i++)
     {
         free(maxtrix[i]);
