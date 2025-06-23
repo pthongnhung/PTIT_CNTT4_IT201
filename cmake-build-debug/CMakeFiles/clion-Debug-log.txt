@@ -13,13 +13,13 @@ CMake Error at C:/Program Files/CLion 2025.1 (1)/CLion 2025.1.2/bin/cmake/win/x6
 
   It fails with the following output:
 
-    Change Dir: 'C:/Users/PC/OneDrive/Hình ảnh/Saved Pictures/Máy tính/PTIT_CNTT4_IT201/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-a1vs9v'
+    Change Dir: 'C:/Users/PC/OneDrive/Hình ảnh/Saved Pictures/Máy tính/PTIT_CNTT4_IT201/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-orr0sv'
     
-    Run Build Command(s): "C:/Program Files/CLion 2025.1 (1)/CLion 2025.1.2/bin/ninja/win/x64/ninja.exe" -v cmTC_26c30
-    [1/2] C:\PROGRA~1\CLION2~1.1(1\CLION2~1.2\bin\mingw\bin\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_26c30.dir/testCCompiler.c.obj -c "C:/Users/PC/OneDrive/Hì€nh à‰nh/Saved Pictures/MĂ¡y tĂ­nh/PTIT_CNTT4_IT201/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-a1vs9v/testCCompiler.c"
-    [2/2] C:\WINDOWS\system32\cmd.exe /C "cd . && C:\PROGRA~1\CLION2~1.1(1\CLION2~1.2\bin\mingw\bin\gcc.exe   CMakeFiles/cmTC_26c30.dir/testCCompiler.c.obj -o cmTC_26c30.exe -Wl,--out-implib,libcmTC_26c30.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
-    FAILED: cmTC_26c30.exe 
-    C:\WINDOWS\system32\cmd.exe /C "cd . && C:\PROGRA~1\CLION2~1.1(1\CLION2~1.2\bin\mingw\bin\gcc.exe   CMakeFiles/cmTC_26c30.dir/testCCompiler.c.obj -o cmTC_26c30.exe -Wl,--out-implib,libcmTC_26c30.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+    Run Build Command(s): "C:/Program Files/CLion 2025.1 (1)/CLion 2025.1.2/bin/ninja/win/x64/ninja.exe" -v cmTC_86858
+    [1/2] C:\PROGRA~1\CLION2~1.1(1\CLION2~1.2\bin\mingw\bin\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_86858.dir/testCCompiler.c.obj -c "C:/Users/PC/OneDrive/Hì€nh à‰nh/Saved Pictures/MĂ¡y tĂ­nh/PTIT_CNTT4_IT201/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-orr0sv/testCCompiler.c"
+    [2/2] C:\WINDOWS\system32\cmd.exe /C "cd . && C:\PROGRA~1\CLION2~1.1(1\CLION2~1.2\bin\mingw\bin\gcc.exe   CMakeFiles/cmTC_86858.dir/testCCompiler.c.obj -o cmTC_86858.exe -Wl,--out-implib,libcmTC_86858.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+    FAILED: cmTC_86858.exe 
+    C:\WINDOWS\system32\cmd.exe /C "cd . && C:\PROGRA~1\CLION2~1.1(1\CLION2~1.2\bin\mingw\bin\gcc.exe   CMakeFiles/cmTC_86858.dir/testCCompiler.c.obj -o cmTC_86858.exe -Wl,--out-implib,libcmTC_86858.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
     'C:\PROGRA~1\CLION2~1.1' is not recognized as an internal or external command,
     operable program or batch file.
     ninja: build stopped: subcommand failed.

@@ -23,6 +23,7 @@ int main()
             {
                 printf("%d + %d =%d\t",numbers[i],numbers[j],sum);
                 flag=1;
+                return 0;
             }
         }
     }
