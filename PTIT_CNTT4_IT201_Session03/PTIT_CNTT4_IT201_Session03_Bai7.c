@@ -10,7 +10,7 @@ int total(int **arr,int k,int cols,int rows)
     }
     for (int i=0;i<cols;i++)
     {
-       sum+=arr[k][i];
+       sum+=arr[k-1][i];
     }
     return sum;
 }
@@ -44,6 +44,7 @@ int main()
         int k;
         printf("Moi nhap vao  hang can tinh tong: ");
         scanf("%d",&k);
+
         printf("Tong cua hang %d la: %d",k,total(maxtrix,k,cols,rows));
         for (int i=0;i<rows;i++)
         {
