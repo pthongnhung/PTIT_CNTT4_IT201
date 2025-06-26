@@ -11,8 +11,7 @@ int main()
 {
     Student student[5];
     for (int i=0;i<5;i++)
-    {
-
+    {+
         printf("Nhap thong tin cua sinh vien thu %d\n", i + 1);
         student[i].id=i+1;
         printf("Nhap ten: ");
