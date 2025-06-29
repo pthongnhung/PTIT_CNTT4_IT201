@@ -18,7 +18,6 @@ int main()
     scanf("%d",&n);
     if (n<=0)
     {
-        printf("Khong hop le");
         return 0;
     }
     int result[n];
@@ -26,8 +25,9 @@ int main()
     {
         result[i]=fibonaci(i);
     }
-    for (int i=0;i<n;i++)
+    for (int i=n-1;i>=0;i--)
     {
         printf("%d ",result[i]);
     }
+    return 0;
 }

@@ -11,7 +11,6 @@ int main() {
     int n;
     printf("Nhap so nguyen duong n: ");
     scanf("%d", &n);
-
     if (n <= 0) {
         printf("Input khong hop le\n");
         return 0;
