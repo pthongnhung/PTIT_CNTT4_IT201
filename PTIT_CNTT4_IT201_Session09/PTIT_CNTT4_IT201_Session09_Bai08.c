@@ -71,6 +71,16 @@ Node* removeAt(Node* head,int index)
     free(temp);
     return head;
 }
+void freeList(Node* head)
+{
+    Node* temp;
+    while (head!=NULL)
+    {
+        temp=head;
+        head=head->next;
+        free(temp);
+    }
+}
 int main()
 {
     Node* head=createNode(1);
@@ -78,9 +88,16 @@ int main()
     head->next->next=createNode(3);
     head->next->next->next=createNode(4);
     head->next->next->next->next=createNode(5);
-    head=removeTail(head);
+    int index;
     printList(head);
-    head=removeAt(head,2);
+    printf("ban muon xoa phan tu vao vi tri nao: ");
+    scanf("%d",&index);
+    if (index<0 || index>length(head))
+    {
+        printf("Vi tri khong hop le");
+        return 0;
+    }
+    head=removeAt(head,index);
     printList(head);
     return 0;
 }

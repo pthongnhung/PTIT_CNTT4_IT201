@@ -44,6 +44,16 @@ Node* removeHead(Node* head)
     free(temp);
     return head;
 }
+void freeList(Node* head)
+{
+    Node* temp;
+    while (head!=NULL)
+    {
+        temp=head;
+        head=head->next;
+        free(temp);
+    }
+}
 int main()
 {
     Node* head=createNode(1);
@@ -54,5 +64,6 @@ int main()
     printList(head);
     head=removeHead(head);
     printList(head);
+    freeList(head);
     return 0;
 }

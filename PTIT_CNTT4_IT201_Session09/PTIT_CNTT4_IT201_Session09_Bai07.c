@@ -65,6 +65,16 @@ Node* insertAt(Node* head,int value,int index)
     newNode->next=temp;
     return head;
 }
+void freeList(Node* head)
+{
+    Node* temp;
+    while (head!=NULL)
+    {
+        temp=head;
+        head=head->next;
+        free(temp);
+    }
+}
 int main()
 {
     Node* head=createNode(1);
@@ -73,11 +83,18 @@ int main()
     head->next->next->next=createNode(4);
     head->next->next->next->next=createNode(5);
     printList(head);
-    head=insertHead(head,10);
+    int index,value;
+    printf("ban muon them phan tu vao vi tri nao: ");
+    scanf("%d",&index);
+    if (index<0 || index>length(head))
+    {
+        printf("Vi tri khong hop le");
+        return 0;
+    }
+    printf("ban muon them phan tu co gia tri la: ");
+    scanf("%d",&value);
+    head=insertAt(head,value,index);
     printList(head);
-    head=insertTail(head,20);
-    printList(head);
-    head=insertAt(head,30,2);
-    printList(head);
+    freeList(head);
     return 0;
 }
