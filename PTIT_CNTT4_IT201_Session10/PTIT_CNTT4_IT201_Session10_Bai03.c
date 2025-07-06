@@ -52,7 +52,10 @@ int main()
     head->next->next->next=createNode(4);
     head->next->next->next->next=createNode(5);
     printfList(head);
-    head=insertTail(head,10);
+    int n;
+    printf("Nhap phan tu ban muon them: ");
+    scanf("%d",&n);
+    head=insertTail(head,n);
     printfList(head);
     freeList(head);
     return 0;
