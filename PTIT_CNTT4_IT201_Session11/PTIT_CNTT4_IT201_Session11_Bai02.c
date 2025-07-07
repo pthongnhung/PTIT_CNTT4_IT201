@@ -17,20 +17,14 @@ Node* createNode(int data)
 void printfList(Node* head)
 {
     Node* current=head;
-    printf("NULL<-");
+    int index=1;
     while(current!=NULL)
     {
-        printf("%d",current->data);
-        if (current->next==NULL)
-        {
-            printf("->");
-        }else
-        {
-            printf("<->");
-        }
+        printf("Node %d: %d\n",index,current->data);
         current=current->next;
+        index++;
     }
-    printf("NULL");
+
 }
 int main()
 {
