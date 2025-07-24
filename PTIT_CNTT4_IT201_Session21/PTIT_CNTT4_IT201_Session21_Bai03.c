@@ -35,6 +35,5 @@ int main() {
 
     printf("\nGraph after adding edge from 1 to 2:\n");
     printGraph(graph);
-
     return 0;
 }
